@@ -1,23 +1,17 @@
 # MAEE
 
-Source code for experiments in paper:
-
-Multi-Aspects Joint Optimization in Recommendation Systems: A Mixture of Aspect-Explicit-Experts Architecture
-
-(submitted to KDD 2022)
-
-
+Simulation code for experiments in the paper: Multi-Aspects Joint Optimization in Recommendation Systems: A Mixture of Aspect-Explicit-Experts Architecture (submitted to KDD 2022).
 
 
 Single task learning:
 
-  -- comparison of MAEE against DNN, MOE
+    -- comparison of MAEE against DNN, MOE
+    
+    -- public dataset: MovieLens 1M
   
-  -- public dataset: MovieLens 1M
+    -- Visualization of expert representations
   
-  -- Visualization of expert representations
-  
-  -- Rationale analaysis of the masked attention mechanism
+    -- Rationale analaysis of the masked attention mechanism
   
 
 
