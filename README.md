@@ -3,7 +3,8 @@
 Simulation code for experiments in the paper: Multi-Aspects Joint Optimization in Recommendation Systems: A Mixture of Aspect-Explicit-Experts Architecture (submitted to KDD 2022).
 
 
-Single task learning:
+Single-task learning
+====================
 
     -- comparison of MAEE against DNN, MOE
     
@@ -16,11 +17,12 @@ Single task learning:
 
 
 
-Multi task learning:
+Multi-task learning
+====================
 
-  -- comparison of MAEE against MMOE, PLE(CGC)
+    -- comparison of MAEE against MMOE, PLE(CGC)
   
-  -- public dataset: Census Income
+    -- public dataset: Census Income
   
-  -- Visualization of expert representations
+    -- Visualization of expert representations
   
