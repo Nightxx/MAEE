@@ -4,7 +4,7 @@ Simulation code for experiments in the paper: Multi-Aspects Joint Optimization i
 
 
 Single-task learning
-====================
+------------
 
     -- comparison of MAEE against DNN, MOE
     
@@ -18,7 +18,7 @@ Single-task learning
 
 
 Multi-task learning
-====================
+------------
 
     -- comparison of MAEE against MMOE, PLE(CGC)
   
