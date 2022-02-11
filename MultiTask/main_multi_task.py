@@ -328,12 +328,11 @@ if __name__ == '__main__':
     '''
     model_config = {
         "name": "mmoe",
-        "units": 8,
+        "units": 16,
         "num_experts": 6,
         "num_tasks": 2
     }
     '''
-
 
     # 2. CGC(PLE) (6 experts): income task test AUC=0.9446, marital task test AUC=0.9488, lr=0.005, units=4
     '''
@@ -355,7 +354,6 @@ if __name__ == '__main__':
         "num_tasks": 2
     }
     '''
-
 
     # 4. MAEE (2 fields, 6 experts): income task test AUC=0.9460, marital task test AUC=0.9635, lr=0.005, units=16
 

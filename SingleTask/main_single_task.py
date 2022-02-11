@@ -382,7 +382,6 @@ if __name__ == '__main__':
     }
     '''
 
-
     # 2. MOE(3 experts): AUC=0.8176, lr=0.001, units=16
     '''
     model_config = {
@@ -392,7 +391,6 @@ if __name__ == '__main__':
     }
     '''
 
-
     # 3. MOE(6 experts): AUC=0.8184, lr=0.001, units=4
     '''
     model_config = {
@@ -401,7 +399,6 @@ if __name__ == '__main__':
         "num_experts": 6
     }
     '''
-
 
     # 4. MAEE(1 field, 3 experts): test AUC=0.8178, lr=0.001, units=16
     '''
@@ -416,7 +413,6 @@ if __name__ == '__main__':
     }
     '''
 
-
     # 5. MAEE(2 field, 6 experts): test AUC=0.8194, lr=0.001, units=16
 
     model_config = {
@@ -428,6 +424,7 @@ if __name__ == '__main__':
         "field_values": [[["F"], ["M"]], [["1", "18"], ["25", "35", "45"], ["50", "56"]]],
         "field_types": ["discrete", "discrete"],
     }
+
 
 
 
