@@ -2,6 +2,7 @@
 
 Simulation code for experiments in the paper: Multi-Aspects Joint Optimization in Recommendation Systems: A Mixture of Aspect-Explicit-Experts Architecture (submitted to KDD 2022).
 
+Environment: Python 3.7
 
 Single-task learning
 ------------
