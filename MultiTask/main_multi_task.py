@@ -1,8 +1,25 @@
-import random
 
-import pandas as pd
 import numpy as np
 import tensorflow as tf
+import random
+
+SEED = 1
+
+# Fix numpy seed for reproducibility
+np.random.seed(SEED)
+
+# Fix random seed for reproducibility
+random.seed(SEED)
+
+# Fix TensorFlow graph-level seed for reproducibility
+tf.random.set_seed(SEED)
+import pandas as pd
+
+# Fix op-parallelism parameters for reproducibility
+session_conf = tf.compat.v1.ConfigProto(intra_op_parallelism_threads=12, inter_op_parallelism_threads=1)
+sess = tf.compat.v1.Session(graph=tf.compat.v1.get_default_graph(),config=session_conf)
+tf.compat.v1.keras.backend.set_session(sess)
+
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.initializers import VarianceScaling
 from tensorflow.keras.layers import Input, Dense
@@ -15,16 +32,7 @@ from MultiTask.model.mmoe import Mmoe
 from MultiTask.model.maee import Maee
 from MultiTask.model.ple import Ple
 
-SEED = 1
 
-# Fix numpy seed for reproducibility
-np.random.seed(SEED)
-
-# Fix random seed for reproducibility
-random.seed(SEED)
-
-# Fix TensorFlow graph-level seed for reproducibility
-tf.random.set_seed(SEED)
 
 # Simple callback to print out ROC-AUC
 class ROCCallback(Callback):
@@ -267,7 +275,7 @@ def main(model_config, train_config):
     print('Validation data shape = {}'.format(validation_data.shape))
     print('Test data shape = {}'.format(test_data.shape))
 
-
+    print(train_data, train_label, validation_data, validation_label, test_data, test_label)
     # Set up the input layer
     input_layer = Input(shape=(num_features,))
     # Set up expert layer
@@ -320,8 +328,8 @@ def main(model_config, train_config):
     )
 
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     # Set up model_config for different models
 
     # 1. MMOE(6 experts): income task test AUC=0.9417, marital task test AUC=0.9360, lr=0.01, units=8

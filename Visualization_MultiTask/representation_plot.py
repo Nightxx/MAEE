@@ -30,6 +30,13 @@ random.seed(SEED)
 
 # Fix TensorFlow graph-level seed for reproducibility
 tf.random.set_seed(SEED)
+
+# Fix op-parallelism parameters for reproducibility
+session_conf = tf.compat.v1.ConfigProto(intra_op_parallelism_threads=12, inter_op_parallelism_threads=1)
+sess = tf.compat.v1.Session(graph=tf.compat.v1.get_default_graph(),config=session_conf)
+tf.compat.v1.keras.backend.set_session(sess)
+
+
 import seaborn as sns
 sns.set_style('darkgrid')
 sns.set_context("notebook", font_scale=0.5,
