@@ -10,13 +10,18 @@ Environment: Python 3.7.3
 Please download the MovieLens 1M dataset at
 ```
 https://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census-income.data.gz
+```
+
+```
 https://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census-income.test.gz
 ```
 Then add the two dataset census-income.data.gz and census-income.test.gz to MAEE/MultiTask/data and MAEE/Visualization_MultiTask/data
 
 ### Multi-task learning:
 Please download the Census Income dataset at
+```
 https://files.grouplens.org/datasets/movielens/ml-1m.zip
+```
 
 Then unzip the package and add the three dataset users.dat, movies.dat, and ratings.dat to MAEE/SingleTask/data and MAEE/Visualization_SingleTask/data
 
@@ -39,10 +44,7 @@ Then unzip the package and add the three dataset users.dat, movies.dat, and rati
 
 ### Multi-task learning
 
+Comparison of MAEE against MMOE, PLE(CGC)
 
-    -- comparison of MAEE against MMOE, PLE(CGC)
-  
-    -- public dataset: Census Income
-  
-    -- Visualization of expert representations
+Visualization of expert representations
   
