@@ -33,18 +33,18 @@ Then unzip the package and add the three dataset users.dat, movies.dat, and rati
 ### Single-task learning
 
 
-    -- comparison of MAEE against DNN, MOE
++ Comparison of MAEE against DNN, MOE
   
-    -- Visualization of expert representations
++ Visualization of expert representations
   
-    -- Rationale analaysis of the masked attention mechanism
++ Rationale analaysis of the masked attention mechanism
   
 
 
 
 ### Multi-task learning
 
-Comparison of MAEE against MMOE, PLE(CGC)
++ Comparison of MAEE against MMOE, PLE(CGC)
 
-Visualization of expert representations
++ Visualization of expert representations
   
