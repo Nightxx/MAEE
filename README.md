@@ -4,6 +4,8 @@ Simulation code for experiments in the paper: Multi-Aspects Joint Optimization i
 
 Environment: Python 3.7.3
 
+Versions of the other packages are summarized in `requirements.txt` 
+
 ## Data Preparation:
 
 ### Single-task learning: 
@@ -21,7 +23,7 @@ Please download the Census Income dataset at
 + [https://files.grouplens.org/datasets/movielens/ml-1m.zip](https://files.grouplens.org/datasets/movielens/ml-1m.zip)
 
 
-Then unzip the package ml-1m.zip and add the three datasets `users.dat`, `movies.dat`, and `ratings.dat` to `MAEE/SingleTask/data` and `MAEE/Visualization_SingleTask/data`
+Then unzip the package `ml-1m.zip` and add the three datasets `users.dat`, `movies.dat`, and `ratings.dat` to `MAEE/SingleTask/data` and `MAEE/Visualization_SingleTask/data`
 
 
 
