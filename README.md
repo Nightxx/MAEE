@@ -21,7 +21,7 @@ Please download the Census Income dataset at
 + [https://files.grouplens.org/datasets/movielens/ml-1m.zip](https://files.grouplens.org/datasets/movielens/ml-1m.zip)
 
 
-Then unzip the package ml-1m.zip and add the three dataset `users.dat`, `movies.dat`, and `ratings.dat` to `MAEE/SingleTask/data` and `MAEE/Visualization_SingleTask/data`
+Then unzip the package ml-1m.zip and add the three datasets `users.dat`, `movies.dat`, and `ratings.dat` to `MAEE/SingleTask/data` and `MAEE/Visualization_SingleTask/data`
 
 
 
